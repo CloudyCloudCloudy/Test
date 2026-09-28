@@ -26,15 +26,15 @@ body {
 /* ---------- Page Header ---------- */
 
 header {
-  padding: 2rem 1rem;
+  padding: 32px 16px;
   text-align: center;
   color: white;
   background-color: #1f795e;
 }
 
 header h1 {
-  margin: 0 0 0.5rem;
-  font-size: 2rem;
+  margin: 0 0 8px;
+  font-size: 32px;
 }
 
 header p {
@@ -45,12 +45,12 @@ header p {
 /* ---------- Main Content / Container ---------- */
 
 main {
-  width: min(100% - 2rem, 900px);
-  margin: 2rem auto;
+  width: min(100% - 32px, 900px);
+  margin: 32px auto;
 }
 
 section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 section h2 {
@@ -62,7 +62,7 @@ section h2 {
 /* ---------- Form Card ---------- */
 
 form {
-  padding: 2rem;
+  padding: 32px;
   background-color: #ffffff;
   border: 1px solid #d1d5db;
   border-radius: 10px;
@@ -79,13 +79,13 @@ form {
 
 fieldset {
   margin: 0;
-  padding: 1.5rem;
+  padding: 24px;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
 }
 
 legend {
-  padding: 0 0.5rem;
+  padding: 0 8px;
   font-weight: bold;
   color: #1f795e;
 }
@@ -95,7 +95,7 @@ legend {
 
 label {
   display: block;
-  margin-bottom: 0.4rem;
+  margin-bottom: 6.4px;
   font-weight: 600;
   color: #374151;
 }
@@ -115,7 +115,7 @@ select,
 textarea {
   width: 100%;
   max-width: 600px;
-  padding: 0.7rem 0.75rem;
+  padding: 11.2px 12px;
   font: inherit;
   color: #111827;
   background-color: #ffffff;
@@ -152,9 +152,9 @@ button:focus {
 /* ---------- Checkbox ---------- */
 
 input[type="checkbox"] {
-  width: 1.1rem;
-  height: 1.1rem;
-  margin-right: 0.4rem;
+  width: 17.6px;
+  height: 17.6px;
+  margin-right: 6.4px;
   accent-color: #1f795e;
   vertical-align: middle;
 }
@@ -174,10 +174,10 @@ input[type="checkbox"] + label {
 /* ---------- Submit Button ---------- */
 
 button[type="submit"] {
-  margin-top: 1rem;
-  padding: 0.75rem 1.25rem;
+  margin-top: 16px;
+  padding: 12px 20px;
   font: inherit;
-  font-weight: bold;
+  font-weight: 700;
   color: White;
   background-color: #1f795e;
   border: 2px solid #1f795e;
@@ -214,10 +214,10 @@ textarea:valid {
 /* ---------- Footer ---------- */
 
 footer {
-  padding: 1.5rem 1rem;
+  padding: 24px 16px;
   text-align: center;
   color: #4b5563;
-  font-size: 0.9rem;
+  font-size: 14.4px;
 }
 
 
@@ -232,24 +232,24 @@ footer {
 
 @media (max-width: 600px) {
   header {
-    padding: 1.5rem 1rem;
+    padding: 24px 16px;
   }
 
   header h1 {
-    font-size: 1.6rem;
+    font-size: 25.6px;
   }
 
   main {
-    width: min(100% - 1rem, 900px);
-    margin: 1rem auto;
+    width: min(100% - 16px, 900px);
+    margin: 16px auto;
   }
 
   form {
-    padding: 1rem;
+    padding: 16px;
   }
 
   fieldset {
-    padding: 1rem;
+    padding: 16px;
   }
 
   input[type="text"],
