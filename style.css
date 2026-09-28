@@ -257,4 +257,10 @@ footer {
   input[type="number"],
   select,
   textarea {
-  
+    max-width: 100%;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
