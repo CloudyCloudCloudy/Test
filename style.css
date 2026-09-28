@@ -1,0 +1,260 @@
+/* =========================================================
+   Expense Reimbursement — Week 4
+   Purpose: readable, consistent, responsive form styling
+   ========================================================= */
+
+
+/* ---------- Base / Reset ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+
+/* ---------- Page Header ---------- */
+
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  background-color: #1f4e79;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+}
+
+
+/* ---------- Main Content / Container ---------- */
+
+main {
+  width: min(100% - 2rem, 900px);
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #1f4e79;
+}
+
+
+/* ---------- Form Card ---------- */
+
+form {
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- Field Group ---------- */
+
+/*
+  Fieldset visually groups related controls.
+  The legend provides the accessible group name.
+*/
+
+fieldset {
+  margin: 0;
+  padding: 1.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: #1f4e79;
+}
+
+
+/* ---------- Labels ---------- */
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+
+/* ---------- Form Controls ---------- */
+
+/*
+  Shared styling keeps inputs, selects, and textareas
+  visually consistent.
+*/
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.7rem 0.75rem;
+  font: inherit;
+  color: #111827;
+  background-color: #ffffff;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+}
+
+
+/* Allow the description box to resize vertically. */
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+
+/* ---------- Focus States ---------- */
+
+/*
+  A visible focus indicator is important for keyboard users.
+  Do not remove the browser focus outline without replacing it.
+*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+  border-color: #1f4e79;
+}
+
+
+/* ---------- Checkbox ---------- */
+
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.4rem;
+  accent-color: #1f4e79;
+  vertical-align: middle;
+}
+
+/*
+  The checkbox label is kept inline because the label and
+  checkbox form one small yes/no control.
+*/
+
+input[type="checkbox"] + label {
+  display: inline;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/* ---------- Submit Button ---------- */
+
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  font: inherit;
+  font-weight: 700;
+  color: white;
+  background-color: #1f4e79;
+  border: 2px solid #1f4e79;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #163a5c;
+  border-color: #163a5c;
+}
+
+
+/* ---------- Validation Feedback ---------- */
+
+/*
+  These styles provide a simple visual indication when
+  a required/constraint-based control is invalid.
+*/
+
+input:invalid:not(:focus),
+select:invalid:not(:focus),
+textarea:invalid:not(:focus) {
+  border-color: #b91c1c;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: #6b7280;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   Responsive Design
+   ========================================================= */
+
+/*
+  At narrow widths, reduce padding and keep the form
+  comfortably inside the viewport.
+*/
+
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    width: min(100% - 1rem, 900px);
+    margin: 1rem auto;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  fieldset {
+    padding: 1rem;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select,
+  textarea {
+  
