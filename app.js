@@ -1,11 +1,11 @@
 const DIRECTOR_APPROVAL_THRESHOLD = 5000;
 
+const amountInput = document.querySelector("#amount");
+const approvalMessage = document.querySelector("#approvalMessage");
+
 function requiresDirectorApproval(amount) {
 return amount > DIRECTOR_APPROVAL_THRESHOLD;
 }
-
-const amountInput = document.querySelector("#amount");
-const approvalMessage = document.querySelector("#approvalMessage");
 
 amountInput.addEventListener("input", function () {
 const value = amountInput.value;
